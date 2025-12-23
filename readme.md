@@ -80,3 +80,10 @@ Move `index.jsp` and `result.jsp` to a new directory `views` within webapp and s
     spring.mvc.view.prefix=/views/
     spring.mvc.view.suffix=.jsp
     ```
+`@ModelAttribute()` is responsible for attaching data to the Model object and it is optional. 
+
+    @RequestMapping("addStudent")
+    public String addStudent(@ModelAttribute Student student) {
+
+        return "result";
+    }
