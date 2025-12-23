@@ -2,6 +2,7 @@
 
 <html>
 <body>
-    <h2>Result is : ${result} </h2>
+    <h2>Welcome!!!</h2>
+    <p>${student} </p>
 </body>
 </html>

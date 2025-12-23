@@ -19,19 +19,23 @@ public class HomeController {
 
     @RequestMapping("add")
     public ModelAndView add(int num1, @RequestParam("num2") int num, ModelAndView mv) {
-//  public String add(int num1, @RequestParam("num2") int num, Model model) {
-//  public String add(HttpServletRequest req, HttpSession session) { //new page
-
-//        int num1 = Integer.parseInt(req.getParameter("num1"));
-//        int num2 = Integer.parseInt(req.getParameter("num2"));
         int result = num1 + num;
-//        model.addAttribute("result", result);
         mv.addObject("result", result);
         mv.setViewName("result");
 
-//        session.setAttribute("result", result);
+        return mv;
+    }
 
-//        return "result";
+    @RequestMapping("addStudent")
+    public ModelAndView addStudent(int sid, String sname, ModelAndView mv) {
+
+        Student student = new Student();
+        student.setSid(sid);
+        student.setSname(sname);
+
+        mv.addObject("student", student);
+        mv.setViewName("result");
+
         return mv;
     }
 }
