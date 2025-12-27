@@ -1,5 +1,7 @@
 # Create Web App using Spring Boot
 
+A simple Spring Boot web application built using Spring MVC and JSP, running on an embedded Tomcat server. The project demonstrates MVC architecture, request handling using controllers, JSP view rendering with Tomcat Jasper, form submission, request parameter processing, and data transfer between controller and view using session/model.
+
 Created using spring.io
 
 ### Dependencies 
